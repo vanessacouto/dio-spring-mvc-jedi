@@ -53,7 +53,7 @@ public class JediService {
     }
 
     public void delete(final Long id) {
-        final Jedi jedi = findById(id);
+        final Jedi jedi = findById(id); // já lança exception se não existir o "id"
 
         repository.delete(jedi);
     }
